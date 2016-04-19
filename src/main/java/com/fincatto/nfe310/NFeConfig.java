@@ -23,4 +23,11 @@ public interface NFeConfig {
     NFUnidadeFederativa getCUF();
 
     NFTipoEmissao getTipoEmissao();
+
+    /**
+     * Lista de protocolos aceitos pela UF, separados por virgula.
+     * Ex: TLSv1,TLSv1.1,TLSv1.2
+     * @return protocolos aceitos pela UF.
+     */
+    String getProtocolosSuportados();
 }
